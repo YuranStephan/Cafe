@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .error-message {
+        display: none;
+        border: 2px solid red;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #ffe6e6;
+        color: #b30000;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        animation: slideDown 0.5s ease forwards;
+        position: relative;
+      }
+      .error-message img {
+        width: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        <img src="https://img.icons8.com/?size=100&id=RsKuo8tsFP3Q&format=png&color=000000" alt="Ícone de Iniciar Sessão">
+        <span>Iniciar sessão</span>
+      </h1>
+      
+      
+
+      <fieldset>
+        <div class="field">
+          <label for="user">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M4 22a8 8 0 1 1 16 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z"
+                fill="rgba(255,255,255,1)"
+              />
+            </svg>
+          </label>
+          <input type="email" placeholder="EMAIL" id="user" required />
+        </div>
+        <div class="field">
+          <label for="password">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M19 10h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 1 1 14 0v1zm-2 0V9A5 5 0 0 0 7 9v1h10zm-6 4v4h2v-4h-2z"
+                fill="rgba(255,255,255,1)"
+              />
+            </svg>
+          </label>
+          <input type="password" placeholder="SENHA" id="password" required />
+        </div>
+
+        <div class="login-buttons">
+          <div class="checkbox-field">
+            <input type="checkbox" id="remember-btn" />
+            <label for="remember-btn">Lembrar de mim</label>
+          </div>
+          <a href="R.html">Registrar-se</a>
+        </div>
+
+        <input type="submit" value="ENTRAR" id="login-btn" />
+        <div class="error-message" id="error-message">
+          <img src="https://img.icons8.com/?size=100&id=63688&format=png&color=000000" alt="Proibição" />
+          Credenciais inválidas. Tente novamente!
+        </div>
+      </fieldset>
+    </main>
+
+    <footer>
+      Powered by
+      <a href="https://github.com/YuranStephan" target="_blank"
+        ><b>Yuran Magodine.</b></a
+      >
+    </footer>
+
+    <script>
+      const validUsers = [
+        { email: "user1@example.com", password: "password1" },
+        { email: "user2@example.com", password: "password2" },
+      ];
+
+      const loginBtn = document.getElementById('login-btn');
+      const errorMessage = document.getElementById('error-message');
+
+      loginBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById('user').value;
+        const password = document.getElementById('password').value;
+
+        const isValid = validUsers.some(
+          (user) => user.email === email && user.password === password
+        );
+
+        if (isValid) {
+          alert('Login bem-sucedido!'); // Substituir isso por redirecionamento ou lógica adicional
+        } else {
+          errorMessage.style.display = 'block';
+          setTimeout(() => {
+            errorMessage.style.display = 'none';
+          }, 3000);
+        }
+      });
+    </script>
+    <script src="devmod.js"></script>
+  </body>
+</html>

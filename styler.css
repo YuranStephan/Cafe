@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Cabin', sans-serif;
+
+  background-image: url(./assetsr/homer-bg.png);
+  background-size: cover;
+  background-position-x: -120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+main {
+  width: 600px;
+  height: 450px;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.error {
+  height: 242px;
+  border-bottom: 2px solid grey;
+}
+
+.error h2 {
+  height: 100%;
+  margin-left: 40px;
+  text-align: left;
+
+  font-size: 235px;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: -15px;
+
+  border: none;
+
+  transition: 300ms;
+}
+
+.error img {
+  position: absolute;
+  right: 33px;
+  top: 7px;
+
+  width: 170px;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: -2px;
+
+  margin: 20px 0 30px;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto 37px;
+
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+main a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffff00;
+  filter: brightness(0.9);
+  opacity: 0.8;
+
+  background-color: #161c25;
+  border: none;
+  border-radius: 5px;
+
+  padding: 8px 15px;
+
+  transition: 300ms;
+}
+
+main a:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+footer {
+  font-size: 14px;
+  color: black;
+
+  opacity: 0.7;
+  transition: 300ms;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer:hover {
+  cursor: pointer;
+}
+
+/* Media query para dispositivos menores */
+@media (max-width: 768px) {
+  body {
+    background-position-x: center;
+    gap: 50px;
+  }
+
+  main {
+    width: 90%;
+    height: auto;
+  }
+
+  .error {
+    height: auto;
+  }
+
+  .error h2 {
+    margin-left: 0;
+    text-align: center;
+
+    font-size: 25vw; /* Ajusta dinamicamente conforme a largura */
+    letter-spacing: -5px;
+  }
+
+  .error img {
+    position: static;
+    margin: 0 auto;
+    display: block;
+
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  p {
+    width: 90%;
+    font-size: 4.5vw;
+  }
+
+  main a {
+    font-size: 4.5vw;
+    padding: 10px 20px;
+  }
+
+  footer {
+    font-size: 4vw;
+  }
+}

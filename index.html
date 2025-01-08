@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food Responsive </title>
+    <!-- Font Google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- File Normalize  -->
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- Main Style sheet  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+     <!-- Header section Starts   -->
+     <header>
+        <a href="" class="logo">
+            <img src="https://img.icons8.com/?size=100&id=avzgbKiLzCFk&format=png&color=000000" alt="Logo café Acacias" style="width: 20px; height: 20px; vertical-align: middle;"> 
+            café Acacias
+        </a>
+        
+
+         <nav class="navbar">
+             <a href="#home" class="active">Inicio</a>
+             <a href="#menu">menu</a>
+             <a href="#about">Sobre nos</a>
+             <a href="#review">reviews</a>
+             <a href="#contact">Pedir</a>
+         </nav>
+
+         <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            
+            <a href="#contact" class="fas fa-shopping-cart"></a>  
+
+          </div>
+
+          <div class="login-icon">
+            <a href="loginindex.html">
+              <img src="https://img.icons8.com/?size=100&id=26211&format=png&color=000000" alt="Login Icon">
+            </a>
+            <p>Login</p>
+          </div>
+          
+
+          
+
+     </header>
+     <!-- Header section ends -->
+
+     <!-- Search form starts -->
+     <form action="" id="search-form">
+         <input type="search" placeholder="search here..." id="search-box">
+         <label for="search-box" class="fas fa-search"></label>
+         i,<fas class="fas fa-times" id="close"></fas>
+     </form>
+     <!-- Search form ends -->
+
+     <!-- Home section starts  -->
+       <section class="home" id="home">
+           <div class="swiper home-slide">
+            
+               <div class="swiper-wrapper wrapper">
+                
+                <div class="swiper-slide slide">
+                    <div class="content">
+                       <span>Prato do Dia</span>
+                       <h3>Pizza Acacias</h3>
+                       <p>a nossa pizza é mais do que uma simples refeição — é uma verdadeira obra-prima da gastronomia! Feita com ingredientes frescos e selecionados, a massa crocante, o molho especial e a combinação perfeita de queijos e toppings tornam cada pedaço uma explosão de sabores.</p>
+                       <a href="#contact" 
+   style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; 
+          background-color: #3498db; color: #fff; text-decoration: none; 
+          padding: 0.8rem 1.5rem; font-size: 1.4rem; font-weight: bold; 
+          border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease;" 
+   onmouseover="this.style.backgroundColor='#2980b9'; this.style.transform='scale(1.05)';" 
+   onmouseout="this.style.backgroundColor='#3498db'; this.style.transform='scale(1)';" 
+   onmousedown="this.style.transform='scale(0.95)';" 
+   onmouseup="this.style.transform='scale(1.05)';">
+  <img src="https://img.icons8.com/?size=100&id=22617&format=png&color=000000" 
+       alt="Ícone de pedido" 
+       style="width: 20px; height: 20px;">
+  Peça Já
+</a>
+
+                     </div>
+                     <div class="image">
+                         <img src="./images/home-img-3.png" alt="">
+                     </div>
+                </div>
+
+                 <div class="swiper-slide slide">
+                       <div class="content">
+                          <span>Prato do dia</span>
+                          <h3>Frango Fumado</h3>
+                          <p>No Café Acacias, a perfeição está no sabor! O nosso frango fumado é preparado com carinho e técnicas especiais para trazer uma explosão de sabor em cada pedaço. Defumado na medida certa, com especiarias exclusivas, esse prato é um convite a uma experiência gastronômica única.</p>
+                          <a href="#contact" 
+   style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; 
+          background-color: #3498db; color: #fff; text-decoration: none; 
+          padding: 0.8rem 1.5rem; font-size: 1.4rem; font-weight: bold; 
+          border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease;" 
+   onmouseover="this.style.backgroundColor='#2980b9'; this.style.transform='scale(1.05)';" 
+   onmouseout="this.style.backgroundColor='#3498db'; this.style.transform='scale(1)';" 
+   onmousedown="this.style.transform='scale(0.95)';" 
+   onmouseup="this.style.transform='scale(1.05)';">
+  <img src="https://img.icons8.com/?size=100&id=22617&format=png&color=000000" 
+       alt="Ícone de pedido" 
+       style="width: 20px; height: 20px;">
+  Peça Já
+</a>
+
+                        </div>
+                        <div class="image">
+                            <img src="./images/home-img-2.png" alt="">
+                        </div>
+                   </div>
+                   <div class="swiper-slide slide">
+                    <div class="content">
+                       <span>Prato do dia</span>
+                       <h3>Esparaguente Acacias</h3>
+                       <p>No Café Acacias, oferecemos do que café. Nosso cardápio é repleto de delícias gastronômicas para todos os gostos! Venha descobrir a nossa variedade de pratos, desde refeições leves até especialidades marcantes, como o nosso exclusivo esparaguete a moçambicana</p>
+                       <a href="#contact" 
+   style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; 
+          background-color: #3498db; color: #fff; text-decoration: none; 
+          padding: 0.8rem 1.5rem; font-size: 1.4rem; font-weight: bold; 
+          border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease;" 
+   onmouseover="this.style.backgroundColor='#2980b9'; this.style.transform='scale(1.05)';" 
+   onmouseout="this.style.backgroundColor='#3498db'; this.style.transform='scale(1)';" 
+   onmousedown="this.style.transform='scale(0.95)';" 
+   onmouseup="this.style.transform='scale(1.05)';">
+  <img src="https://img.icons8.com/?size=100&id=22617&format=png&color=000000" 
+       alt="Ícone de pedido" 
+       style="width: 20px; height: 20px;">
+  Peça Já
+</a>
+
+                     </div>
+                     <div class="image">
+                         <img src="./images/home-img-1.png" alt="">
+                     </div>
+                </div>
+               </div>
+               
+               <div class="swiper-pagination"></div>
+           </div>
+       </section> 
+
+     <!-- Home section ends  -->
+      <!-- facility section starts -->
+      <section class="facility">
+
+        <div class="heading">
+            <img src="https://img.icons8.com/?size=100&id=81197&format=png&color=000000" alt="Icon" style="width: 2rem; height: 2rem; margin-bottom: 1rem;">
+            <h3>O nosso café</h3>
+        </div>
+        
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/icon-1.png" alt="">
+                <h3>variedades de cafés</h3>
+                <p>Oferecemos uma ampla variedade de cafés, desde os clássicos Arábica e Robusta até opções exclusivas como Geisha e Bourbon, entre outros exoticos.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-2.png" alt="">
+                <h3>Grãos do café </h3>
+                <p>Nossos grãos são colhidos à mão e cuidadosamente tratados até chegarem às nossas instalações, preservando sua qualidade e frescor a cada etapa.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-3.png" alt="">
+                <h3>Lanches especiais </h3>
+                <p>Disponibilizamos lanches especiais, preparados com ingredientes selecionados e frescos, para oferecer uma experiência única e deliciosa acompanhando o seu café</p>
+            </div>
+
+            <div class="box">
+                <img src="images/icon-4.png" alt="">
+                <h3>cafés prontos no minuto </h3>
+                <p>Oferecemos cafés prontos no minuto, para que você aproveite uma experiência fresca e saborosa a qualquer hora, com a praticidade que o seu dia a dia exige.</p>
+            </div>
+        </div>
+    </section>
+  <!-- facility section ends -->
+
+
+<!-- menu section start  -->
+<section class="menu" id="menu">
+
+    <div class="heading">
+        <img class="icon" src="https://img.icons8.com/?size=100&id=68489&format=png&color=000000" alt="Popular Menu Icon">
+        <h3>Nosso Menu</h3>
+    </div>
+    
+    <style>
+        .icon {
+            transition: transform 0.3s ease;
+        }
+    
+        .icon:hover {
+            transform: scale(1.2); /* Aumenta o tamanho do ícone quando o mouse passa por cima */
+        }
+    </style>
+    
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/menu-1.png" alt="">
+                <h3>Velvet cappuccino</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-2.png" alt="">
+                <h3>cappuccino</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-3.png" alt="">
+                <h3>mocha Noir</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-4.png" alt="">
+                <h3>frappuccino</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-5.png" alt="">
+                <h3>Duplo expresso</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/menu-6.png" alt="">
+                <h3>love Roast cappuccino</h3>
+            </div>
+
+        </div>
+</section>
+<!-- menu section end  -->
+     
+     <!-- About section starts  -->
+       <section class="about" id="about">
+           <h3 class="sub-heading">Sobre nós</h3>
+           <h1 class="heading">Por que passar a tarde no acacias ?</h1>
+
+           <div class="row">
+               <div class="image">
+                <img src="images/f18489eca78a48fc9490719b90469a06.png" alt="">
+               </div>
+               <div class="content">
+                   <h3>Proporcionamos momentos unicos</h3>
+                   <p>
+                    No Café Acácias, cada visita é uma experiência inesquecível. Com uma vista deslumbrante para a metrópole e para o mar, oferecemos o cenário perfeito para você relaxar e apreciar momentos especiais. Nossa dedicação à qualidade é refletida em cada prato e bebida, preparados com ingredientes frescos e cuidadosamente selecionados.
+                </p>
+
+                   <div class="icons-container">
+                    <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=pt5RU2ksbVFL&format=png&color=000000" alt="Ícone de entrega gratuita" class="icon-delivery" />
+                        <span>Entrega gratuita</span>
+                    </div>
+                    
+                    <style>
+                        .icon-delivery {
+                            width: 24px;
+                            height: 24px;
+                            animation: vibration 2.5s ease-in-out infinite;
+                        }
+                    
+                        @keyframes vibration {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            25% {
+                                transform: translateX(-4px);
+                            }
+                            50% {
+                                transform: translateX(4px);
+                            }
+                            75% {
+                                transform: translateX(-4px);
+                            }
+                            100% {
+                                transform: translateX(0);
+                            }
+                        }
+                    </style>
+                    
+                       <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=sMjb-hXHUOg3&format=png&color=000000" alt="Ícone de pagamento fácil" style="width: 24px; height: 24px;" />
+                        <span>Pagamento fácil</span>
+                    </div>
+                    
+                       <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=aXqSmqDrRquU&format=png&color=000000" alt="Headset Icon" style="width: 24px; height: 24px;">
+                        <span>Visite-nos</span>
+                    </div>
+                    
+
+           </div>
+       </section>
+
+     <!-- About section ends  -->
+
+     <!-- Menu section starts  -->
+     <section class="speciality" id="speciality">
+         <h3 class="sub-heading">Menu de refeições </h3>
+         <h1 class="heading">Nossos Especias Hoje </h1>
+
+         <div class="box-container">
+
+            
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/food(20).png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Entremet de Framboesa</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$930.99 Mts</span>
+                 </div>
+             </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/undefined(3).PNG" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Hamburger Acacias</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$425,50 Mts</span>
+                 </div>
+             </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/food(24).png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Salada de Endívias e frango</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$750,00 Mts</span>
+                 </div>
+             </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/food(22).png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Néctar de Laranjas Silvestres</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$425,99 Mts</span>
+                 </div>
+             </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/food(16).png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Ciabatta de Morangos Frescos,</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$550,00 Mts</span>
+                 </div>
+             </div>            <div class="box">
+                <div class="image">
+                    <img src="./images/food(23).PNG" alt="">
+                    
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h3>Expresso Acacias</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                    <a href="#contact" class="btn add-to-cart"> 
+                       <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                   </a>
+                    <span class="price">$49,00 Mts</span>
+                </div>
+            </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/food(17).png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Sorbet de Chocolate</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$320,00 Mts</span>
+                 </div>
+             </div>
+             <div class="box">
+                 <div class="image">
+                     <img src="./images/9C4fulqm.png" alt="">
+                     
+                 </div>
+                 <div class="content">
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                     </div>
+                     <h3>Gratinado de Maçaroca</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia.</p>
+                     <a href="#contact" class="btn add-to-cart"> 
+                        <img src="https://img.icons8.com/?size=100&id=59997&format=png&color=000000" alt="Add to Cart" class="cart-icon">
+                    </a>
+                     <span class="price">$450,00 Mts</span>
+                 </div>
+             </div>
+
+         </div>
+     </section>
+     <!-- Menu section ends  -->
+
+     <!-- Review section starts  -->
+     <section class="review" id="review">
+        <h3 class="sub-heading">Opinião dos Clientes</h3>
+        <h1 class="heading">O que dizem sobre nós?</h1>
+    
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/v3_0130893.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Maria Clara</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "O Café Acácias é incrível! A comida é deliciosa, o atendimento é maravilhoso e a vista para o mar deixa tudo ainda mais especial. Recomendo de olhos fechados!"
+                    </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/v3_0190208.jpg" alt="">
+                        <div class="user-info">
+                            <h3>João Pedro</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "Um lugar perfeito para relaxar e apreciar uma boa refeição com vista para o mar. O ambiente é acolhedor e os pratos são impecáveis. Com certeza voltarei!"
+                    </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/v3_0085577.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Fernanda Silva</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "Comida excelente, drinks deliciosos e uma vista que faz qualquer um se apaixonar. O Café Acácias é o meu lugar favorito para jantar e relaxar."
+                    </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="./images/v3_0322345.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Ricardo Oliveira</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        "O ambiente é espetacular, a equipe é atenciosa e os sabores são incríveis. A vista para o mar torna tudo ainda mais especial. Nota 10!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Review section ends  -->
+
+     <!-- Order section starts  -->
+
+        <h3 class="sub-heading"> Preguiça de sair de casa ? </h3>
+        <h1 class="heading"> Trazemos o acacias para VOCÊ</h1>
+
+        <!-- steps section starts  -->
+
+        <div class="step-container">
+            <section class="steps">
+
+                <div class="box">
+                    <img src="images/step-1.jpg" alt="">
+                    <h3>Escolha Seu Combo </h3>
+                </div>
+                <div class="box">
+                    <img src="images/step-2.jpg" alt="">
+                    <h3>Receba rapidamente</h3>
+                </div>
+                <div class="box">
+                    <img src="images/step-3.jpg" alt="">
+                    <h3>Pague o pedido de forma facil</h3>
+                </div>
+                <div class="box">
+                    <img src="images/step-4.jpg" alt="">
+                    <h3>Depois, Disfrute cada degustação</h3>
+                </div>
+
+        </div>
+     </section>
+     <!-- Order section ends  -->
+
+      
+    <!-- contact section start  -->
+    <section class="contact" id="contact">
+
+        <div class="heading">
+            <div class="box scroll-animation">
+                <img src="https://img.icons8.com/?size=100&id=LYCCRbcZmMFC&format=png&color=000000" alt="Contact Us Icon" width="20" height="20">
+                <h3>DÁ-nos Sinal bro!</h3>
+            </div>
+        </div>      
+                    
+        <div class="row">
+
+            <div class="image">
+                <img src="images/Whatsapp1-Copia.png" alt="" class="small-image">
+            </div>
+            <form class="custom-form" action="" onsubmit="enviarWhatsApp(event)">
+                <h3>Reserve ou encomende</h3>
+              
+                <input type="text" name="name" id="name" required class="box" maxlength="20" placeholder="Digite teu nome">
+              
+                <input type="text" name="pedido" id="pedido" required class="box" maxlength="20" placeholder="Pedido">
+              
+                <input type="text" name="cupom" id="cupom" required class="box" maxlength="20" placeholder="Cupom ou codigo de disconto">
+              
+                <div class="checkbox-container">
+                  <label for="typeReservation" class="choose-label">Escolha o tipo:</label><br>
+                  <div class="radio-option">
+                    <input type="radio" name="type" id="reservation" value="Reserva" required> 
+                    <label for="reservation" class="radio-label">
+                      <img src="https://img.icons8.com/?size=100&id=19336&format=png&color=000000" class="radio-icon" id="icon-reservation">
+                      <span>Reserva</span>
+                    </label>
+                  </div>
+                  
+                  <div class="radio-option">
+                    <input type="radio" name="type" id="order" value="Encomenda">
+                    <label for="order" class="radio-label">
+                      <img src="https://img.icons8.com/?size=100&id=19336&format=png&color=000000" class="radio-icon" id="icon-order">
+                      <span>Encomenda</span>
+                    </label>
+                  </div>
+                </div>
+              
+                <input type="submit" name="send" value="Enviar" class="btn">
+              </form>
+              
+              <script>
+                function enviarWhatsApp(event) {
+                  event.preventDefault(); // Previne o envio do formulário padrão
+              
+                  const nome = document.getElementById('name').value;
+                  const pedido = document.getElementById('pedido').value;
+                  const cupom = document.getElementById('cupom').value;
+                  const tipo = document.querySelector('input[name="type"]:checked') ? document.querySelector('input[name="type"]:checked').value : "Não especificado";
+              
+                  const texto = `*Nome:* ${nome}%0A*Pedido:* ${pedido}%0A*Cupom Nr:* ${cupom}%0A*Tipo:* ${tipo}`;
+              
+                  const url = `https://wa.me/258849502936?text=${texto}`;
+                  window.open(url, '_blank');
+                }
+              
+                // Script para alterar os ícones
+                const reservationRadio = document.getElementById('reservation');
+                const orderRadio = document.getElementById('order');
+                
+                reservationRadio.addEventListener('change', function() {
+                  document.getElementById('icon-reservation').src = this.checked ? 'https://img.icons8.com/?size=100&id=40902&format=png&color=000000' : 'https://img.icons8.com/?size=100&id=19336&format=png&color=000000';
+                  document.getElementById('icon-order').src = 'https://img.icons8.com/?size=100&id=19336&format=png&color=000000';
+                });
+              
+                orderRadio.addEventListener('change', function() {
+                  document.getElementById('icon-order').src = this.checked ? 'https://img.icons8.com/?size=100&id=40902&format=png&color=000000' : 'https://img.icons8.com/?size=100&id=19336&format=png&color=000000';
+                  document.getElementById('icon-reservation').src = 'https://img.icons8.com/?size=100&id=19336&format=png&color=000000';
+                });
+              </script>
+              
+        </div>
+    </section>
+    <!-- contact section end  -->
+
+     <!-- Footer section starts  --><footer class="custom-footer">
+  <div class="footer-box-container">
+    <div class="footer-box">
+      <i class="fas fa-home"></i>
+      <h3>Endereço</h3>
+      <p>Rua Principal- Cidade de Maputo</p>
+    </div>
+    <div class="footer-box">
+        <i class="fas fa-phone"></i>
+        <h3>Telefone</h3>
+        <a href="tel:+258861076599" class="phone-link">+258 861 076 599</a>
+      </div>
+    <div class="footer-box">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>Acacias@devYuran.co.mz</p>
+    </div>
+    <div class="footer-box">
+      <i class="fas fa-clock"></i>
+      <h3>Funcionamento</h3>
+      <p>Segunda a Sexta: 09h - 22h</p>
+    </div>
+  </div>
+  <div class="footer-credit">
+    <p>&copy; <span id="current-year"></span> Todos os direitos reservados. Feito por <a href="https://github.com/YuranStephan" target="_blank"><span class="developer">Yuran Magodine</span></a></p>
+  </div>
+</footer>
+
+<script>
+  // Função para exibir a data atual
+  const currentDate = new Date();
+  const formattedDate = currentDate.toLocaleDateString('pt-BR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+  document.getElementById('current-year').textContent = formattedDate;
+</script>
+
+     <!-- Footer section ends  -->
+
+     <!-- loader part  -->
+     <div class="loader"></div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- File Javascript  -->
+    <script src="./js/app.js"> </script>
+</body>
+</html>
